@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.full-body{
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+.full-body .header {
+    width: 100%;
+    height: 150px;
+    background-color: #4f5aec;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4) ;
+    transition: .8s;
+    user-select: none ;
+}
+.header img:hover{
+    filter: grayscale(100%);
+}
+.header-text{
+    color:white;
+    width: 60%;
+    margin-left:  auto;
+}
+.header-text h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.left-area {
+    width:  30%;
+    background-color: #4f5aec;
+    text-align: center;
+}
+.left-area .contact{
+    margin-top: 140px;
+    padding: 0 30px;
+}
+.contact h1{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10px 0;
+    color:white;
+}
+.contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+    color:white;
+}
+.contact p{
+    font-size: 17px;
+    color:white;
+}
+.skills {
+    margin-top: 30px;
+}
+.skills h1{
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+.bars{
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr ) ;
+    gap: 15px 10px;
+    margin-top: 20px;
+}
+.bars .bar p {
+   font: 15px;
+   font-weight: bold;
+   color: white;
+    
+}
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(97, 94, 94);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.bar span::before{
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    background-color:  rgb(26, 23, 23);
+    top: 50%;
+    left: 2px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+.follow h1{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+.follow h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: white;
+}
+.follow p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.right-area{
+    width:70%;
+    padding: 70px;
+}
+.right-area h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.right-area h1{
+    margin-right: 30px;
+    font-size: 35px;
+    color: #4f5aec;
+}
+.right-area h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: #4f5aec;
+}
+.right-area p {
+    padding: 10px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+}
+.work .work-group {
+    position: relative;
+}
+.work-group{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+.work-group h4 {
+    font-size: 22px;
+    font-weight: lighter;
+    
+} 
+.work-group  span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.education {
+    margin-top: 30px;
+} 
+.edu-group {
+    position: relative;
+    margin: 30px 0;
+}
+.edu-group h4 {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.edu-group  span {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.edu-group  p{
+    padding-left: 10px;
+}
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: auto;
+}
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.footer  img {
+    width:60px;
+    height: 60px;
+    border-radius: 50%;  
+}
+.footer h1{
+    font-size: 24px;
+}
+@media screen and (max-width:768px) {
+    .full-body{
+        width: 100%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+    }
+     .header img{
+        width: 90px;
+        height: 90px;
+        top: 35px;
+        left: 12px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+        font-weight: bold;
+    } 
+    .left-area {
+        width:  30%;
+        background-color: #4f5aec;
+        text-align: center;
+    }
+
+    .left-area .contact{
+        margin-top: 10px;
+        padding: 0 ;
+    }
+    .contact h1{
+        font-size: 20px;
+        font-weight: normal;
+        margin: 10px 0;
+        color:white;
+    }
+    .contact p{
+        font-size: 14px;
+        word-break: break-all;
+    }
+    .skills h1{
+        font-size: 20px;  
+    }
+    .bars{
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr ) ;
+        gap: 15px 10px;
+        margin-top: 20px;
+    }
+    .bars .bar p {
+        font: 10px;
+    }
+    .bar span {
+        display: block;
+        width: 90%;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    .follow h1{
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: normal;
+        color: white;
+    }
+    .follow p {
+        font-size: 10px;
+        color: rgb(226, 223, 223);
+        word-break: break-all;
+    }
+    .right-area{
+        width:70%;
+        padding: 10px;
+        margin-bottom: 10px;;
+    }
+    .right-area h1{
+        font-size: 24px;
+     
+    }
+    .right-area h1{
+      
+        font-size: 24px;
+        margin-top: 20px;
+     
+    }
+    .right-area h1 span{
+        margin-right: 0px;
+        font-size: 30px;
+        color: #4f5aec;
+    }
+    .right-area p {
+        font-size: 14px;
+        padding: 0;
+    }
+    .work-group{
+        font-size: 14px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .work-group h4 {
+        font-size: 14px;
+        font-weight: lighter;
+        
+    } 
+    .edu-group {
+        margin: 14px 0
+    }
+    .edu-group h4 {
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .edu-group h3 {
+        padding-left: 10px;
+        font-size: 14px;
+        margin-top: 9px;
+    }
+    .edu-group  span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .edu-group  p{
+        padding-left: 10px;
+    }  
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .full-body *{
+        visibility: visible;
+    }
+
+}
